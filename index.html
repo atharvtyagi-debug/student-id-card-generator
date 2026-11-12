@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student ID Card Generator</h1>
+        <p>Create your digital student ID card</p>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+
+            <h2>Enter Student Details</h2>
+
+            <form id="studentForm">
+
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" placeholder="Enter your name">
+
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" placeholder="Enter student ID">
+
+                <label for="course">Course</label>
+                <input type="text" id="course" placeholder="Enter your course">
+
+                <label for="college">College Name</label>
+                <input type="text" id="college" placeholder="Enter college name">
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter phone number">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email">
+
+                <label for="photo">Student Photo</label>
+                <input type="file" id="photo" accept="image/*">
+
+                <label for="cardColor">Card Color</label>
+                <input type="color" id="cardColor" value="#2563eb">
+
+                <button type="submit">Generate ID Card</button>
+
+            </form>
+
+        </section>
+
+
+        <section class="preview-section">
+
+            <h2>ID Card Preview</h2>
+
+            <div class="id-card" id="idCard">
+
+                <div class="card-header" id="cardHeader">
+                    <h2>STUDENT ID CARD</h2>
+                    <p id="cardCollege">Your College Name</p>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="photo-container">
+                        <img id="cardPhoto" src="" alt="Student Photo">
+                    </div>
+
+                    <div class="student-details">
+
+                        <h3 id="cardName">Student Name</h3>
+
+                        <p>
+                            <strong>ID:</strong>
+                            <span id="cardId">000000</span>
+                        </p>
+
+                        <p>
+                            <strong>Course:</strong>
+                            <span id="cardCourse">Course</span>
+                        </p>
+
+                        <p>
+                            <strong>Phone:</strong>
+                            <span id="cardPhone">0000000000</span>
+                        </p>
+
+                        <p>
+                            <strong>Email:</strong>
+                            <span id="cardEmail">example@email.com</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    <p>Valid Student Identification Card</p>
+                </div>
+
+            </div>
+
+            <button class="print-button" id="printButton">
+                Print / Save as PDF
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Student ID Card Generator | Web Development Mini Project</p>
+    </footer>
+
+</body>
+</html>
